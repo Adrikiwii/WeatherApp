@@ -27,7 +27,7 @@ Pour exécuter ce projet localement, suivez ces étapes :
 
 1. Clonez le dépôt :
    ```bash
-   git clone https://github.com/Adrikiwii/WeatherApp.git
+   git clone https://github.com/Adrikiwii/WeatherApp
 
 ## LIEN WEB
 1. Lien
