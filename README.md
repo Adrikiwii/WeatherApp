@@ -16,9 +16,10 @@ Bienvenue sur WeatherApp, une application web simple et élégante pour consulte
 - **Bootstrap** : Framework CSS pour un design réactif.
 - **API open-meteo.com** : Fournisseur de données météorologiques.
 - **Icônes météo** : Utilisation des icônes du projet [weather-icons](https://github.com/basmilius/weather-icons) pour une représentation visuelle claire des conditions météorologiques.
-<img src="https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/clear-day.svg" alt="Partly Cloudy Day" height="100"/>
-<img src="https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/partly-cloudy-day.svg" alt="Partly Cloudy Day" height="100"/>
-
+<p float="left">
+   <img src="https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/clear-day.svg" alt="Partly Cloudy Day" height="100"/>
+   <img src="https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/partly-cloudy-day.svg" alt="Partly Cloudy Day" height="100"/>
+</p>
 
 ## Installation
 
