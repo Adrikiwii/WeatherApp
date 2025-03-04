@@ -15,6 +15,7 @@ Bienvenue sur WeatherApp, une application web simple et élégante pour consulte
 - **JavaScript** : Interactivité et gestion des données dynamiques.
 - **Bootstrap** : Framework CSS pour un design réactif.
 - **API open-meteo.com** : Fournisseur de données météorologiques.
+- **Icônes météo** : Utilisation des icônes du projet [weather-icons](https://github.com/basmilius/weather-icons) pour une représentation visuelle claire des conditions météorologiques.
 
 ## Installation
 
