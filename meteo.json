@@ -1,0 +1,338 @@
+{
+  "0": {
+    "day": {
+      "description": "Ensolleillé",
+      "image": "img/clear-day.svg",
+      "className": "meteoSunny"
+    },
+    "night": {
+      "description": "Dégagé",
+      "image": "img/falling-stars.svg",
+      "className": "meteoNightClear"
+    }
+  },
+  "1": {
+    "day": {
+      "description": "Plus ou moins ensoleillé",
+      "image": "img/overcast-day.svg",
+      "className": "meteoPartlySunny"
+    },
+    "night": {
+      "description": "Plus ou moins dégagé",
+      "image": "img/overcast-night.svg",
+      "className": "meteoNightClear"
+    }
+  },
+  "2": {
+    "day": {
+      "description": "Partiellement nuageux",
+      "image": "img/partly-cloudy-day.svg",
+      "className": "meteoPartlySunny"
+    },
+    "night": {
+      "description": "Partiellement nuageux",
+      "image": "img/partly-cloudy-night.svg",
+      "className": "meteoNightClear"
+    }
+  },
+  "3": {
+    "day": {
+      "description": "Nuageux",
+      "image": "img/cloudy.svg",
+      "className": "meteoCloudy"
+    },
+    "night": {
+      "description": "Nuageux",
+      "image": "img/partly-cloudy-night.svg",
+      "className": "meteoNightCloudy"
+    }
+  },
+  "45": {
+    "day": {
+      "description": "Brouillard",
+      "image": "img/fog-day.svg",
+      "className": "meteoFoggy"
+    },
+    "night": {
+      "description": "Brouillard",
+      "image": "img/fog-night.svg",
+      "className": "meteoNigthFoggy"
+    }
+  },
+  "48": {
+    "day": {
+      "description": "Brume",
+      "image": "img/haze-day.svg",
+      "className": "meteoFoggy"
+    },
+    "night": {
+      "description": "Brume",
+      "image": "img/haze-night.svg",
+      "className": "meteoNigthFoggy"
+    }
+  },
+  "51": {
+    "day": {
+      "description": "Légère bruine",
+      "image": "img/partly-cloudy-day-drizzle.svg",
+      "className": "meteoRainy"
+    },
+    "night": {
+      "description": "Légère bruine",
+      "image": "img/partly-cloudy-night-drizzle.svg",
+      "className": "meteoNtightRainy"
+    }
+  },
+  "53": {
+    "day": {
+      "description": "Bruine",
+      "image": "img/partly-cloudy-day-drizzle.svg",
+      "className": "meteoRainy"
+    },
+    "night": {
+      "description": "Bruine",
+      "image": "img/partly-cloudy-night-drizzle.svg",
+      "className": "meteoNtightRainy"
+    }
+  },
+  "55": {
+    "day": {
+      "description": "Forte bruine",
+      "image": "img/rain.svg",
+      "className": "meteoRainy"
+    },
+    "night": {
+      "description": "Forte bruine",
+      "image": "img/rain.svg",
+      "className": "meteoNtightRainy"
+    }
+  },
+  "56": {
+    "day": {
+      "description": "Légère bruine verglaçante",
+      "image": "img/partly-cloudy-day-sleet.svg",
+      "className": "meteoRainy"
+    },
+    "night": {
+      "description": "Légère bruine verglaçante",
+      "image": "img/partly-cloudy-night-sleet.svg",
+      "className": "meteoNtightRainy"
+    }
+  },
+  "57": {
+    "day": {
+      "description": "Bruine verglaçante",
+      "image": "img/partly-cloudy-day-sleet.svg",
+      "className": "meteoRainy"
+    },
+    "night": {
+      "description": "Bruine verglaçante",
+      "image": "img/partly-cloudy-night-sleet.svg",
+      "className": "meteoNtightRainy"
+    }
+  },
+  "61": {
+    "day": {
+      "description": "Pluie légère",
+      "image": "img/rain.svg",
+      "className": "meteoRainy"
+    },
+    "night": {
+      "description": "Pluie légère",
+      "image": "img/rain.svg",
+      "className": "meteoNtightRainy"
+    }
+  },
+  "63": {
+    "day": {
+      "description": "Pluie",
+      "image": "img/rain.svg",
+      "className": "meteoRainy"
+    },
+    "night": {
+      "description": "Pluie",
+      "image": "img/rain.svg",
+      "className": "meteoNtightRainy"
+    }
+  },
+  "65": {
+    "day": {
+      "description": "Forte pluie",
+      "image": "img/rain.svg",
+      "className": "meteoRainy"
+    },
+    "night": {
+      "description": "Forte pluie",
+      "image": "img/rain.svg",
+      "className": "meteoNtightRainy"
+    }
+  },
+  "66": {
+    "day": {
+      "description": "Légère pluie verglaçante",
+      "image": "img/sleet.svg",
+      "className": "meteoRainy"
+    },
+    "night": {
+      "description": "Légère pluie verglaçante",
+      "image": "img/sleet.svg",
+      "className": "meteoNtightRainy"
+    }
+  },
+  "67": {
+    "day": {
+      "description": "Pluie verglaçante",
+      "image": "img/sleet.svg",
+      "className": "meteoRainy"
+    },
+    "night": {
+      "description": "Pluie verglaçante",
+      "image": "img/sleet.svg",
+      "className": "meteoNtightRainy"
+    }
+  },
+  "71": {
+    "day": {
+      "description": "Légère neige",
+      "image": "img/snow.svg",
+      "className": "meteoSnowy"
+    },
+    "night": {
+      "description": "Légère neige",
+      "image": "img/snow.svg",
+      "className": "meteoNightSnowy"
+    }
+  },
+  "73": {
+    "day": {
+      "description": "Neige",
+      "image": "img/snow.svg",
+      "className": "meteoSnowy"
+    },
+    "night": {
+      "description": "Neige",
+      "image": "img/snow.svg",
+      "className": "meteoNightSnowy"
+    }
+  },
+  "75": {
+    "day": {
+      "description": "Forte neige",
+      "image": "img/snow.svg",
+      "className": "meteoSnowy"
+    },
+    "night": {
+      "description": "Forte neige",
+      "image": "img/snow.svg",
+      "className": "meteoNightSnowy"
+    }
+  },
+  "77": {
+    "day": {
+      "description": "Grains de neige",
+      "image": "img/hail.svg",
+      "className": "meteoSnowy"
+    },
+    "night": {
+      "description": "Grains de neige",
+      "image": "img/hail.svg",
+      "className": "meteoNightSnowy"
+    }
+  },
+  "80": {
+    "day": {
+      "description": "Légère averse",
+      "image": "img/partly-cloudy-day-drizzle.svg",
+      "className": "meteoRainy"
+    },
+    "night": {
+      "description": "Légère averse",
+      "image": "img/partly-cloudy-night-drizzle.svg",
+      "className": "meteoNtightRainy"
+    }
+  },
+  "81": {
+    "day": {
+      "description": "Averses",
+      "image": "img/partly-cloudy-day-drizzle.svg",
+      "className": "meteoRainy"
+    },
+    "night": {
+      "description": "Averses",
+      "image": "img/partly-cloudy-night-drizzle.svg",
+      "className": "meteoNtightRainy"
+    }
+  },
+  "82": {
+    "day": {
+      "description": "Forte averse",
+      "image": "img/partly-cloudy-day-rain.svg",
+      "className": "meteoRainy"
+    },
+    "night": {
+      "description": "Forte averse",
+      "image": "img/partly-cloudy-night-rain.svg",
+      "className": "meteoNtightRainy"
+    }
+  },
+  "85": {
+    "day": {
+      "description": "Légères averses de neige",
+      "image": "img/partly-cloudy-day-snow.svg",
+      "className": "meteoSnowy"
+    },
+    "night": {
+      "description": "Légères averses de neige",
+      "image": "img/partly-cloudy-night-snow.svg",
+      "className": "meteoNightSnowy"
+    }
+  },
+  "86": {
+    "day": {
+      "description": "Averses de neige",
+      "image": "img/partly-cloudy-day-snow.svgg",
+      "className": "meteoSnowy"
+    },
+    "night": {
+      "description": "Averses de neige",
+      "image": "img/partly-cloudy-night-snow.svg",
+      "className": "meteoNightSnowy"
+    }
+  },
+  "95": {
+    "day": {
+      "description": "Orage",
+      "image": "img/thunderstorms-day.svg",
+      "className": "meteoThunderstorm"
+    },
+    "night": {
+      "description": "Orage",
+      "image": "img/thunderstorms-night.svg",
+      "className": "meteoNightThunderstorm"
+    }
+  },
+  "96": {
+    "day": {
+      "description": "Orages légers avec grêle",
+      "image": "img/thunderstorms-day-rain.svg",
+      "className": "meteoThunderstorm"
+    },
+    "night": {
+      "description": "Orages légers avec grêle",
+      "image": "img/thunderstorms-night-rain.svg",
+      "className": "meteoNightThunderstorm"
+    }
+  },
+  "99": {
+    "day": {
+      "description": "Orages avec grêle",
+      "image": "img/thunderstorms-day-rain.svg",
+      "className": "meteoThunderstorm"
+    },
+    "night": {
+      "description": "Orages avec grêle",
+      "image": "img/thunderstorms-night-rain.svg",
+      "className": "meteoNightThunderstorm"
+    }
+  }
+}

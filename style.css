@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.spinner {
+  position: absolute;
+}
+.meteo {
+  visibility: hidden;
+  color: white;
+  border-radius: 25px;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+.meteoSunny {
+  background: linear-gradient(to bottom left, #fed624, #87ceeb, #13b4f3);
+}
+.meteoPartlySunny {
+  background: linear-gradient(to bottom left, #87ceeb, #bdc3c7);
+}
+.meteoCloudy {
+  background: linear-gradient(to bottom left, #bdc3c7, #2c3e50);
+}
+.meteoRainy {
+  background: linear-gradient(to bottom left, #3a7bd5, #3a6073);
+}
+.meteoThunderstorm {
+  background: linear-gradient(to bottom left, #1f1c2c, #928dab);
+}
+.meteoSnowy {
+  background: linear-gradient(to bottom left, #eef2f3, #8e9eab);
+}
+.meteoFoggy {
+  background: linear-gradient(to bottom left, #757f9a, #d7dde8);
+}
+.meteoNightClear {
+  color: white;
+  background: linear-gradient(to bottom left, #0f2027, #203a43, #2c5364);
+}
+.meteoNightCloudy {
+  color: white;
+  background: linear-gradient(to bottom left, #34495e, #1c1c1c);
+}
+.meteoNightRainy {
+  color: white;
+  background: linear-gradient(to bottom left, #3a6073, #1c1c1c);
+}
+.meteoNightThunderstorm {
+  color: white;
+  background: linear-gradient(to bottom left, #1f1c2c, #1c1c1c);
+}
+.meteoNightSnowy {
+  color: white;
+  background: linear-gradient(to bottom left, #5c6670, #1c1c1c);
+}
+.meteoNightFoggy {
+  color: white;
+  background: linear-gradient(to bottom left, #4c4c4c, #1c1c1c);
+}
+
+.temp {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+}
+.temp p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+.temp span {
+  position: relative;
+  left: 2%;
+}
+
+.type {
+  margin: 2%;
+  font-size: 2em;
+  font-weight: bold;
+  height: 10%;
+}
+.imgDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30%;
+}
+.imgDiv img {
+  width: 250px;
+  height: 250px;
+}
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.HourlyWeather {
+  width: 100%;
+  height: auto;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+.HourlyWeather::-webkit-scrollbar {
+  display: none; /* Pour Chrome, Safari et Opera */
+}
+
+.HourlyWeather div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  height: auto;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  border: #374151 1px solid;
+}
+.HourlyWeather div p {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.HourlyWeather div img {
+  width: 50px;
+  height: 50px;
+}
