@@ -6,6 +6,15 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: linear-gradient(to bottom right, #4a4a4a, #6f6e6e);
+  font-family: Arial, sans-serif;
+}
+#city {
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 3em;
+  font-weight: bold;
 }
 .spinner {
   position: absolute;

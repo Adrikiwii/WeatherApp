@@ -20,6 +20,14 @@ function SetWeather(position) {
   let longitude = position.coords.longitude;
   console.log(latitude);
   console.log(longitude);
+  fetch(
+    "https://geocode.xyz/" + latitude + "," + longitude + "?geoit=json"
+  ).then((response) => {
+    response.json().then((json) => {
+      console.log(json);
+      document.getElementById("city").innerHTML = json.city;
+    });
+  });
   const response = fetch(
     "https://api.open-meteo.com/v1/forecast?latitude=" +
       latitude +
