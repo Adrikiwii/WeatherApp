@@ -28,11 +28,36 @@ function SetWeather(position) {
       document.getElementById("city").innerHTML = json.city;
     });
   });
-  const response = fetch(
+  fetch(
     "https://api.open-meteo.com/v1/forecast?latitude=" +
       latitude +
       "&longitude=" +
       longitude +
+      "&current=temperature_2m,is_day,weather_code&hourly=temperature_2m,weather_code&forecast_days=1&models=best_match"
+  )
+    .then((response) => response.json())
+    .then((json) => {
+      console.log(json);
+      GetWeather(
+        json.current.temperature_2m,
+        json.current.is_day,
+        json.current.weather_code
+      );
+      GetHourlyWeather(json.hourly);
+      document.getElementById("spinner").style.display = "none";
+      document.getElementById("meteo").style.visibility = "visible";
+    });
+}
+
+function SearchWeather(lat, long, city) {
+  console.log(lat);
+  console.log(long);
+  document.getElementById("city").innerHTML = city;
+  fetch(
+    "https://api.open-meteo.com/v1/forecast?latitude=" +
+      lat +
+      "&longitude=" +
+      long +
       "&current=temperature_2m,is_day,weather_code&hourly=temperature_2m,weather_code&forecast_days=1&models=best_match"
   )
     .then((response) => response.json())
@@ -60,12 +85,13 @@ function GetWeather(temp, is_day, weather_code) {
     jsonFile[weather_code][is_day].description;
   document.getElementById("weather_img").src =
     jsonFile[weather_code][is_day].image;
-  document.getElementById("meteo").className +=
-    " " + jsonFile[weather_code][is_day].className;
+  document.getElementById("meteo").className =
+    "meteo container grid " + jsonFile[weather_code][is_day].className;
 }
 
 function GetHourlyWeather(data) {
   var div = document.getElementById("HourlyWeather");
+  div.innerHTML = "";
   for (let i = 0; i < 24; i++) {
     var hourly = document.createElement("div");
     var weather_code = data.weather_code[i];
@@ -86,3 +112,20 @@ function GetHourlyWeather(data) {
     hourly.className += " " + jsonFile[weather_code][is_day].className;
   }
 }
+
+function SearchCity() {
+  let city = document.getElementById("cityInput").value;
+  document.getElementById("cityInput").value = "";
+  fetch(
+    "https://geocoding-api.open-meteo.com/v1/search?name=" +
+      city +
+      "&count=1&language=fr&format=json"
+  ).then((response) => {
+    response.json().then((json) => {
+      console.log(json);
+      SearchWeather(json.results[0].latitude, json.results[0].longitude, city);
+    });
+  });
+}
+
+document.getElementById("search").addEventListener("click", SearchCity);

@@ -6,12 +6,81 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(to bottom right, #4a4a4a, #6f6e6e);
+  background: linear-gradient(135deg, #add8e6, #b0e0e6);
   font-family: Arial, sans-serif;
 }
+
+.CloudHeader {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 5em;
+  left: 50%;
+  margin-top: -100px; /* Negative half of height. */
+  margin-left: -250px;
+  background: rgb(255, 255, 255);
+  width: 30em;
+  height: 5em;
+  border-radius: 150px;
+}
+
+.CloudHeader:after {
+  z-index: 1;
+  content: "";
+  background: rgb(255, 255, 255);
+  position: absolute;
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  top: 0em;
+  left: 3em;
+}
+
+.CloudHeader:before {
+  z-index: 1;
+  content: "";
+  background: rgb(254, 255, 255);
+  position: absolute;
+  width: 17em;
+  height: 12em;
+  border-radius: 50%;
+  top: 0em;
+  right: 2.5em;
+}
+
+.CloudHeader .search {
+  margin-top: 5%;
+  font-size: 2em;
+  font-weight: bold;
+  z-index: 2;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 7%;
+  background-color: rgb(100, 51, 19);
+  box-shadow: 0px 0px 0px 10px rgb(33, 163, 42);
+  color: white;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+}
+footer img {
+  width: 2em;
+  height: 2em;
+}
+
 #city {
   color: white;
-  margin: 0;
   padding: 0;
   font-size: 3em;
   font-weight: bold;
@@ -20,6 +89,7 @@ body {
   position: absolute;
 }
 .meteo {
+  margin-top: 10vh;
   visibility: hidden;
   color: white;
   border-radius: 25px;
@@ -97,7 +167,7 @@ body {
   margin: 2%;
   font-size: 2em;
   font-weight: bold;
-  height: 10%;
+  height: 15%;
 }
 .imgDiv {
   display: flex;
